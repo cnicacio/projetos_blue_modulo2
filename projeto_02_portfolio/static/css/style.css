@@ -1,0 +1,473 @@
+@font-face {
+    font-family: "Quicksand-Medium";
+    src: url("../fonts/static/Quicksand-Medium.ttf");
+}
+
+* {
+    font-family: "Quicksand-Medium";
+}
+    
+html {
+    scroll-behavior: smooth;
+}
+
+#fixo {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    background-color: #182825;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav ul li {
+    padding: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f7f6f3;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #f7f6f3;
+    color: #182825;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: #f7f6f3;
+}
+
+.foto {
+    border-radius: 50%;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: row;
+    background-color: #6d8ea0;
+    height: 400px;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+section div.sobre1 img {
+    height: 50px;
+    padding-bottom: 1rem;
+}
+
+section div.sobre1 .formacaoimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1rem;
+    width: max-content;
+}
+
+section div.sobre1 .formacaotxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 1rem;
+    padding-bottom: 100px;
+}
+
+section div.sobre1 .formacao p {
+    padding-bottom: 10px;
+}
+
+section div.sobre1 .formacao {
+    display: flex;
+    flex-direction: row;
+}
+
+section div.sobre1 p#titulo0 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 90%;
+    align-items: center;
+    color: #182825;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+section div.sobre1 p#titulo1 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 90%;
+    align-items: center;
+    color: #182825;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+section div.sobre1 p {
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    color: #182825;
+}
+
+#coordenacao {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #182825;
+    padding-top: 15px;
+}
+
+section#coordenacao img {
+    width: 100%;
+    padding-bottom: 0%;
+}
+
+section#coordenacao p#titulo2 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    color: #f7f6f3;
+}
+
+.legenda {
+    padding-top: 0%;
+    width: 100%;
+    text-align: center;
+    color: #f7f6f3;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+div.coordenacao1 {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #182825;
+}
+
+#desenvolvimento {
+    display: flex;
+    flex-direction: column;
+    background-color: #6d8ea0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+section#desenvolvimento p#titulo3 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    color: #182825;
+}
+
+section#desenvolvimento p.legenda2 {
+    padding-top: 0%;
+    width: 100%;
+    text-align: center;
+    color: #f7f6f3;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+section#desenvolvimento div.certificado {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+a.codigo {
+    text-decoration: none;
+    color: #f7f6f3;
+    cursor: pointer;
+}
+
+section#desenvolvimento div.certificado img.cert {
+    height: 400px;
+}
+
+section#desenvolvimento div.certificado video.video {
+    height: 400px;
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #182825;
+    padding-top: 15px;
+}
+
+section#habilidades p#titulo4 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    color: #f7f6f3;
+}
+
+section#habilidades div.estrelas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #f7f6f3;
+    width: 30%;
+    padding-bottom: 2em;
+}
+
+section#habilidades p.titulo5 {
+    display: flex;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #f7f6f3;
+    font-weight: bold;
+}
+
+section#habilidades div.estrelas span{
+    font-size: 2rem;
+  }
+
+.checked {
+    color: yellow;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6d8ea0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+section#contato p#titulo6 {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    color: #182825;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #182825;
+}
+
+footer p#titulo7 {
+    display: flex;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #f7f6f3;
+}
+
+footer div.links {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+footer div.links i {
+    font-size: 50px;
+    padding: 10px;
+    color: #f7f6f3;
+}
+
+footer div.links i:hover {
+    font-size: 70px;
+    padding: 10px;
+    color: #6d8ea0;
+    transition: 0.5s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    color: #182825;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+input {
+    width: 500px;
+}
+
+section#contato form button {
+    border: 1px solid #182825;
+    background-color: #f7f6f3;
+    color: #182825;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    width: 40%;
+  }
+  
+section#contato form button:disabled {
+    border: 1px solid #f7f6f3;
+    background-color: #6d8ea0;
+    color: #182825;
+}
+  
+section#contato form button:hover:disabled {
+    border: 1px solid #f7f6f3;
+    background-color: #6d8ea0;
+    color: #182825;
+}
+  
+section#contato form button:hover {
+    background-color: #182825;
+    color: #f7f6f3;
+}
+
+textarea {
+    resize: vertical;
+}
+
+section#contato div#carregamento{
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  section#contato div#carregamento p{
+    color: #182825;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #182825;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+}
+
+  /* página enviar */
+
+section#enviado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #182825;
+}
+  
+section#enviado div#envio{
+    background-color: #182825;
+    text-align: center;
+    color: #f7f6f3;
+    width: 50%;
+    padding: 100px;
+}
+
+section#enviado div#envio a{
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid #f7f6f3;
+    color: #f7f6f3;
+    border-radius: .4rem;
+    transition: all .4s ease-out;
+    padding: 1rem;
+}
+
+section#enviado div#envio a:hover{
+    background-color: #f7f6f3;
+    color: #182825;
+}
+
+section#enviado div#envio h3 {
+    padding: 2rem;
+}
+
+section#enviado div#envio i {
+    font-size: 100px;
+    color: #6d8ea0;
+}
